@@ -125,21 +125,18 @@ layout_theme = {
 #Window naming system
 
 layouts = [
-    #layout.Columns(**layout_theme),
+    # layout.Columns(**layout_theme),
     layout.Spiral(
         main_pane="left",
         main_pane_ratio=0.5,
         clockwise=True,
         new_client_position='after_current',
         ratio=0.5,
-        **layout_theme
+        **layout_theme,
     ),
-    layout.Zoomy(
-        margin=[2, 4, 2, 4],
-        columnwidth=100
-    ),
+    # layout.Zoomy(margin=[2, 4, 2, 4], columnwidth=100, **layout_theme),
     #Configurações modificadas: border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4
-    # layout.Max(**layout_theme),
+    layout.Max(**layout_theme),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(**layout_theme),
